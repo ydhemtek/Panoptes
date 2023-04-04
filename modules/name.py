@@ -1,4 +1,4 @@
-#priority:4
+#priority:0
 from Panoptes import *
 from undetected_chromedriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
@@ -6,6 +6,7 @@ from termcolor import colored
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 import time
+
 @modules.new("Find address by name")
 def find_addres():
     print(colored("\nOnly in France /!\ ", "red"))

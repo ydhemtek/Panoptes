@@ -45,12 +45,12 @@ def main():
     retry = None
     while retry != False:
         for i in menu :
-            print(f"[{menu.index(i)}] - {i.desc}")
+            print(f"[{menu.index(i)+1}] - {i.desc}")
         number = str(input("\nChoose a number : "))
-        if not number in [str(x) for x in range(0, len(menu))]:
+        if not number in [str(x+1) for x in range(0, len(menu))]:
             print(f"Wrong number, try again.")
         else:
-            number = int(number)
+            number = int(number)-1
             menu[number].f()
             retry = False
 

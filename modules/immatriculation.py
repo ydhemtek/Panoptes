@@ -9,6 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 from tqdm import tqdm
 import subprocess
 import time
+
 @modules.new("Find information about a vehicle using a license plate")
 def from_license_plate():
     print(colored("\nOnly in France /!\ \n", "red"))
