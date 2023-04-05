@@ -76,7 +76,7 @@ Unfortunately Windows installer does not add Penoptes to PATH, so you have to ru
 
 ## Error case / Warning
 
-# type of recurring error :
+### type of recurring error :
 
 ```bash
 selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:46973
