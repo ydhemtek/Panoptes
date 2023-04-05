@@ -1,9 +1,9 @@
 
 # --------------------------------Panoptes--------------------------------
 
-### A multi tool for OSINT
+### An OSINT toolbox
 
-logo ici
+![logo](media/logo.jpg)
 
 
 ## Authors
@@ -36,9 +36,14 @@ you can notably find tools created by [@megadose](https://www.github.com/megados
 
 ```
 
+> To uninstall the package, run the following command:
+> ```bash
+> [user]$ sudo python3 setup.py uninstall
+> ```
+
 ## Example / Run
 
 ```bash
-[user]$ python3 Panoptes.py
+[user]$ ./panoptes
 ```
 
