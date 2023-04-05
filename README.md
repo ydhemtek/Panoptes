@@ -107,7 +107,7 @@ Stacktrace:
 
 Install [Chrome](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjpx8L2t5P-AhWO91EKHcmNCpwYABABGgJ3cw&ohost=www.google.com&cid=CAESbeD26ibCdTRUJqYiRxupSrotoeEW43uIMDFr5NxbEvmKSNfCzGPk7A_XR0TNvRdXJG-tyBYkXn_1raGDx7TQ_zt5wwWomctnMa89_uk2WjoIgfCNBbwEsAx6UeIrP2597-2rKVTl42Cx9sHqTJg&sig=AOD64_3lXi44u6AXISAd8yXXsUxajE8grg&adurl&ved=2ahUKEwiy17v2t5P-AhX4UaQEHUQ2AyQQqyQoAHoECAgQCw) on the offical page (link for Debian/Ubuntu/Fedora/openSUSE.)
 
-# For update Chrome :
+# To update Chrome :
 
 For Fedora :
 
@@ -128,4 +128,4 @@ know install the package :
 rpm -i "google-chrome-stable_current_x86_64(1).rpm" 
 ```
 
-# ⚠️ if the error persists, don't worry, simply restart the chosen module until a loading bar is displayed ⚠️
+## ⚠️ if the error persists, don't worry, simply restart the chosen module until a loading bar is displayed ⚠️
