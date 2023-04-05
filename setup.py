@@ -12,7 +12,7 @@ def install() :
 
     if os.name == "nt":
         with open("run.bat", "w") as f:
-            f.write("venv\\Scripts\\activate.bat && python Panoptes.py")
+            f.write("venv\\Scripts\\python.exe Panoptes.py")
     else:
         os.system("deactivate")
         with open("run.sh", "w") as f:

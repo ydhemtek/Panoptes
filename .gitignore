@@ -3,3 +3,5 @@ page.html
 my_package.egg-info/
 build/
 dist/
+/run
+/run.sh
