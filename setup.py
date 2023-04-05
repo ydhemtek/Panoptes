@@ -16,7 +16,7 @@ def install() :
     else:
         os.system("deactivate")
         with open("run.sh", "w") as f:
-            f.write(f"#!/bin/bash\n{os.getcwd()}/venv/bin/python3 Panoptes.py")
+            f.write(f"#!/bin/bash\n{os.getcwd()}/venv/bin/python3 {os.getcwd()}/Panoptes.py")
         os.system("chmod +x run.sh")
         os.system("ln -s run.sh run")
         if os.path.exists("/usr/bin/panoptes"):
