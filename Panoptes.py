@@ -31,12 +31,15 @@ def parse_prior(mname) :
             if line.startswith("#priority") :
                 return int(line.split(":")[1].strip())
     return 9999999999
+
+get_modules_dir = lambda : os.path.join(os.path.dirname(os.path.realpath(__file__)), "modules")
+
 def list_modules():
     modules = []
-    for module in os.listdir("modules"):
+    for module in os.listdir(get_modules_dir()):
         if module.endswith(".py"):
-            ctime = os.path.getctime(os.path.join("modules", module))
-            priority = parse_prior(os.path.join("modules", module))
+            ctime = os.path.getctime(os.path.join(get_modules_dir(), module))
+            priority = parse_prior(os.path.join(get_modules_dir(), module))
             modules.append((ctime, priority, module))
     modules.sort(key=lambda x: (x[1], x[0]))
     return [x[2] for x in modules]

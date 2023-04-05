@@ -14,7 +14,6 @@ def install() :
         with open("run.bat", "w") as f:
             f.write("venv\\Scripts\\python.exe Panoptes.py")
     else:
-        os.system("deactivate")
         with open("run.sh", "w") as f:
             f.write(f"#!/bin/bash\n{os.getcwd()}/venv/bin/python3 {os.getcwd()}/Panoptes.py")
         os.system("chmod +x run.sh")
