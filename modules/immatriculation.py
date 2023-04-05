@@ -24,7 +24,7 @@ def from_license_plate():
     except ProcessLookupError:
         print(f"Failed to terminate process listening on port {port}. Permission denied.")
 
-    im = str(input("\nEntrer a license plate : "))
+    im = str(input("\nEnter a license plate : "))
     tor_config = {
         'SocksPort': str(9150),
         'ControlPort': str(9151),
