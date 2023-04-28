@@ -109,11 +109,11 @@ To ensure that you have the latest version of Chrome, install it from the offici
 
 For fedore :
 
-1. Check which version(s) of Google Chrome you have installed:
+- Check which version(s) of Google Chrome you have installed:
 ```bash
 rpm -qa | grep google-chrome
 ```
-2. Choose the version you want to uninstall and execute the following command:
+- Choose the version you want to uninstall and execute the following command:
 ```bash
 rpm -e <chrome-package-name-here>
 ```
@@ -122,7 +122,7 @@ For example:
 rpm -e google-chrome-unstable-41.0.2224.3-1.x86_64
 ```
 
-3. Install the latest version of Chrome:
+- Install the latest version of Chrome:
 ```bash
 rpm -i "google-chrome-stable_current_x86_64.rpm" 
 ```
