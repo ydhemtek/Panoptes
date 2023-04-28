@@ -1,66 +1,65 @@
-
 ![logo](media/panoptes_logo_no_background.png)
 
-### An OSINT toolbox
+# Panoptes: An OSINT Toolbox
 
 ## Authors
 
 - [@ydhemtek](https://www.github.com/ydhemtek)
-
 - [@edoigtrd](https://www.github.com/edoigtrd)
-
 
 ## Summary
 
-Panoptes is a collection of several osint tools, making it easier to find open source information.
+Panoptes is a collection of OSINT tools designed to make it easier to find open-source information.
 
-Some modules use tools created by [@megadose](https://www.github.com/megadose)
+Some modules use tools created by [@megadose](https://www.github.com/megadose).
 
--  Coded with Python 3
--  Builtins modules uses Tor proxy
--  Use [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
+- Coded with Python 3
+- Built-in modules use Tor proxy
+- Uses [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
 
-# Modules
+## Modules
 
 Panoptes is composed of several modules:
 
 ### 1. Megadose
- Megadose module is a collection of tools created by [@megadose](https://www.github.com/megadose)
- - [Holehe](https://github.com/megadose/holehe)
- - [Toutatis](https://github.com/megadose/toutatis)
- - [Ignorent](https://github.com/megadose/ignorant)
+
+The Megadose module is a collection of tools created by [@megadose](https://www.github.com/megadose):
+
+- [Holehe](https://github.com/megadose/holehe)
+- [Toutatis](https://github.com/megadose/toutatis)
+- [Ignorent](https://github.com/megadose/ignorant)
 
 ### 2. Immatriculation
- Immatriculation module is a tool to find information about a vehicle using its license plate number.
- It only works in France for the moment.
 
-### 3. Open streets maps
- Open streets maps is a module used to find two closest instances of a given address.
- Example: Fnac + McDonalds will find places near a Fnac and a McDonalds.
+The Immatriculation module is a tool for finding information about a vehicle using its license plate number. It currently only works in France.
+
+### 3. OpenStreetMaps
+
+The OpenStreetMaps module is a tool for finding the two closest instances of a given address. For example, "Fnac + McDonalds" will find places near a Fnac and a McDonalds.
 
 ### 4. Username
- Username module is a tool that search usernames on different social medias.
- It is inspired on [sherlock](https://github.com/sherlock-project/sherlock/)
+
+The Username module is a tool for searching usernames on different social media platforms. It is inspired by [sherlock](https://github.com/sherlock-project/sherlock/).
 
 ### 5. Name
- Name module takes a name and a surname as input and search the address of the person
- It uses [PagesJaunes](https://www.pagesjaunes.fr/) and [PagesBlanches](https://www.pagesblanches.fr/) so it only works in France for the moment.
 
-## installation
+The Name module takes a name and a surname as input and searches for the person's address. It uses [PagesJaunes](https://www.pagesjaunes.fr/) and [PagesBlanches](https://www.pagesblanches.fr/), so it only works in France at the moment.
+
+## Installation
 
 ```bash
 [user]$ git clone git@github.com:ydhemtek/Panoptes.git
 [user]$ cd Panoptes
 [user]$ python3 setup.py install
-
 ```
 
-> To uninstall the package, run the following command:
-> ```bash
-> [user]$ sudo python3 setup.py uninstall
-> ```
+To uninstall the package, run the following command:
 
-## Example / Run
+```bash
+[user]$ sudo python3 setup.py uninstall
+```
+
+## Usage
 
 After installing on Linux, you can run the program by typing the following command in the terminal:
 
@@ -68,15 +67,14 @@ After installing on Linux, you can run the program by typing the following comma
 [user]$ ./panoptes
 ```
 
-Unfortunately Windows installer does not add Penoptes to PATH, so you have to run it from the directory where it is installed.
+Unfortunately, the Windows installer does not add Panoptes to PATH, so you have to run it from the directory where it is installed:
 
 ```bash
 > run.bat
 ```
 
-## Error case / Warning
-
-### type of recurring error :
+## Error Cases/Warnings
+### Recurring Error Types
 
 ```bash
 selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:46973
@@ -103,18 +101,19 @@ Stacktrace:
 #17 0x7f8f5da8cded start_thread
 ```
 
-# ⚠️ make sure you always have the latest version of chrome. ⚠️
+# ⚠️ Make sure you always have the latest version of Chrome. ⚠️
 
-Install [Chrome](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjpx8L2t5P-AhWO91EKHcmNCpwYABABGgJ3cw&ohost=www.google.com&cid=CAESbeD26ibCdTRUJqYiRxupSrotoeEW43uIMDFr5NxbEvmKSNfCzGPk7A_XR0TNvRdXJG-tyBYkXn_1raGDx7TQ_zt5wwWomctnMa89_uk2WjoIgfCNBbwEsAx6UeIrP2597-2rKVTl42Cx9sHqTJg&sig=AOD64_3lXi44u6AXISAd8yXXsUxajE8grg&adurl&ved=2ahUKEwiy17v2t5P-AhX4UaQEHUQ2AyQQqyQoAHoECAgQCw) on the offical page (link for Debian/Ubuntu/Fedora/openSUSE.)
+To ensure that you have the latest version of Chrome, install it from the official page [here](google.com/chrome/) . If you are using Debian, Ubuntu, Fedora, or openSUSE, use the corresponding link provided on the page.
 
-## To update Chrome :
+## To update Chrome
 
-For Fedora :
+For fedore :
 
+1. Check which version(s) of Google Chrome you have installed:
 ```bash
 rpm -qa | grep google-chrome
 ```
-Look at see if you can find the installed chrome package, maybe not only one, just choice which one you want to uninstall, enter:
+2. Choose the version you want to uninstall and execute the following command:
 ```bash
 rpm -e <chrome-package-name-here>
 ```
@@ -122,10 +121,10 @@ For example:
 ```bash
 rpm -e google-chrome-unstable-41.0.2224.3-1.x86_64
 ```
-now install the package :
 
+3. Install the latest version of Chrome:
 ```bash
 rpm -i "google-chrome-stable_current_x86_64.rpm" 
 ```
 
-### ⚠️ if the error persists, don't worry, simply restart the chosen module until a loading bar is displayed ⚠️
+### ⚠️ If the error persists, simply restart the selected module until a loading bar is displayed. ⚠️
