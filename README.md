@@ -101,9 +101,9 @@ Stacktrace:
 #17 0x7f8f5da8cded start_thread
 ```
 
-# ⚠️ Make sure you always have the latest version of Chrome. ⚠️
+# ⚠️ Make sure you always have the latest version of Chrome compatible with the latest version of selenium undetectable, currently chrome 114. ⚠️
 
-To ensure that you have the latest version of Chrome, install it from the official page [here](google.com/chrome/) . If you are using Debian, Ubuntu, Fedora, or openSUSE, use the corresponding link provided on the page.
+search on the internet for a version of chrome requested by selenium. Here {Recurring Error Types} "This version of ChromeDriver only supports Chrome version 112"
 
 ## To update Chrome
 
