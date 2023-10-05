@@ -22,7 +22,7 @@ def close_places() :
     place1 = str(input("\nplace 1 : "))
     place2 = str(input("\nplace 2 : "))
     country_code = str(input("\n(exemple : FR) enter a country : "))
-    km = int(input("\nenter a minimum km : "))
+    km = int(input("\nenter a maximum km : "))
     limit1 = int(input(f"\nlimited number of {place1} : "))
     limit2 = int(input(f"\nlimited number of {place2} : "))
 
