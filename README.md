@@ -29,7 +29,7 @@ The Megadose module is a collection of tools created by [@megadose](https://www.
 - [Toutatis](https://github.com/megadose/toutatis)
 - [Ignorent](https://github.com/megadose/ignorant)
 
-### 2. Immatriculation
+### 2. Immatriculation (currently unavailable, due to captcha, we are looking for solutions...)
 
 The Immatriculation module is a tool for finding information about a vehicle using its license plate number. It currently only works in France.
 
