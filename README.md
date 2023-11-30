@@ -23,13 +23,13 @@ Panoptes is composed of several modules:
 
 ### 1. Megadose
 
-The Megadose module is a collection of tools created by [@megadose](https://www.github.com/megadose):
+The Megadose module is a collection of tools created by [@megadose](https://www.github.com/megadose) :
 
 - [Holehe](https://github.com/megadose/holehe)
 - [Toutatis](https://github.com/megadose/toutatis)
 - [Ignorent](https://github.com/megadose/ignorant)
 
-### 2. Immatriculation (currently unavailable, due to captcha, we are looking for solutions...)
+### 2. Immatriculation (currently unavailable, due to captcha; we are looking for solutions...)
 
 The Immatriculation module is a tool for finding information about a vehicle using its license plate number. It currently only works in France.
 
@@ -53,7 +53,7 @@ The Name module takes a name and a surname as input and searches for the person'
 [user]$ python3 setup.py install
 ```
 
-To uninstall the package, run the following command:
+To uninstall the package, run the following command :
 
 ```bash
 [user]$ sudo python3 setup.py uninstall
@@ -61,13 +61,13 @@ To uninstall the package, run the following command:
 
 ## Usage
 
-After installing on Linux, you can run the program by typing the following command in the terminal:
+After installing on Linux, you can run the program by typing the following command in the terminal :
 
 ```bash
 [user]$ ./panoptes
 ```
 
-Unfortunately, the Windows installer does not add Panoptes to PATH, so you have to run it from the directory where it is installed:
+Unfortunately, the Windows installer does not add Panoptes to PATH. Therefore, you have to run it from the directory where it is installed :
 
 ```bash
 > run.bat
@@ -101,28 +101,28 @@ Stacktrace:
 #17 0x7f8f5da8cded start_thread
 ```
 
-# ⚠️ Make sure you always have the latest version of Chrome compatible with the latest version of selenium undetectable, currently chrome 114. ⚠️
+# ⚠️ Make sure you always have the latest version of Chrome that is compatible with the latest version of undetectable selenium, which is currently Chrome 114. ⚠️
 
 search on the internet for a version of chrome requested by selenium. Here {Recurring Error Types} "This version of ChromeDriver only supports Chrome version 112"
 
 ## To update Chrome
 
-For fedore :
+For fedora :
 
-- Check which version(s) of Google Chrome you have installed:
+- Check which version(s) of Google Chrome you have installed :
 ```bash
 rpm -qa | grep google-chrome
 ```
-- Choose the version you want to uninstall and execute the following command:
+- Choose the version you want to uninstall and execute the following command :
 ```bash
 rpm -e <chrome-package-name-here>
 ```
-For example:
+For example :
 ```bash
 rpm -e google-chrome-unstable-41.0.2224.3-1.x86_64
 ```
 
-- Install the latest version of Chrome:
+- Install :
 ```bash
 rpm -i "google-chrome-stable_current_x86_64.rpm" 
 ```
